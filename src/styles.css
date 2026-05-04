@@ -1,0 +1,133 @@
+@import url(https://fonts.bunny.net/css?family=electrolize:400);
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+*:not(dialog) {
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+#container {
+  font-family: "Electrolize", sans-serif;
+  color: white;
+  text-shadow: 2px 2px #8a8cffff;
+  background-size: cover;
+  min-height: 100vh;
+  background: linear-gradient(
+    to top,
+    #00fbffff 0%,
+    #8a8cffff 51%,
+    #ff38c0ff 100%
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 4rem;
+}
+
+#cafe-name {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+.palm-tree {
+  fill: white;
+  width: 80px;
+  filter: drop-shadow(2px 2px #8a8cffff);
+}
+
+.left.palm-tree {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+header button {
+  background-color: rgb(167, 167, 167);
+  border-top: 2px ridge rgb(255, 236, 254);
+  border-left: 2px ridge rgb(255, 236, 254);
+  border-right: 2px ridge rgb(22, 20, 32);
+  border-bottom: 2px ridge rgb(22, 20, 32);
+}
+
+header button:active {
+  border: 0;
+}
+
+#content {
+  border: 2px solid rgba(255, 125, 236, 0.523);
+  outline: 2px solid rgba(255, 193, 235, 0.447);
+  background: rgba(183, 183, 183, 0.377);
+  margin: 16px;
+  padding: 16px;
+}
