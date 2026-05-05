@@ -3,6 +3,7 @@ import { homeContent } from "./home.js";
 import { menuContent } from "./menu.js";
 import { aboutContent } from "./about.js";
 
+homeContent();
 const buttons = document.querySelectorAll("button");
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
