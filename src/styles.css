@@ -107,9 +107,9 @@ header h1 {
 }
 
 .left.palm-tree {
+  filter: drop-shadow(-2px 2px #8a8cffff);
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
-  filter: drop-shadow(2px 2px #8a8cffff);
 }
 
 .right.palm-tree {
